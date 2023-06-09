@@ -1,5 +1,5 @@
 # gartic.io-bot
-[Bot Site](https://gabimaruthehollow2.github.io/v2/)
+[Bot Site](https://jeffallah.github.io/v2/)
 
 
 https://user-images.githubusercontent.com/83531197/232592228-7d5a0ddc-4a94-4b25-9383-dc50f4f7d71c.mp4

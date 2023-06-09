@@ -1,0 +1,442 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr" lang="tr">
+	<head>
+        <style type="text/css">
+            <!--
+                #webme_sky_ad {
+                    position: absolute;
+                    right: 5px;
+                    top: 0px;
+                    z-index: 1000000000000000000; 
+                }
+            //-->
+        </style>    
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+		        <script type="text/javascript">
+        var dateTimeOffset = new Date().getTimezoneOffset();
+        
+        function getElementsByClassNameLocalTimeWrapper() {
+            return document.getElementsByClassName("localtime");
+        }
+        
+        (function () {
+            var onload = function () {
+                var elementArray = new Array();
+                
+                if (document.getElementsByClassName) {
+                    elementArray = getElementsByClassNameLocalTimeWrapper();
+                } else {
+                    var re = new RegExp('(^| )localtime( |$)');
+                    var els = document.getElementsByTagName("*");
+                    for (var i=0,j=els.length; i<j; i++) {
+                        if (re.test(els[i].className))
+                            elementArray.push(els[i]);
+                    }
+                }
+                
+                for (var i = 0; i < elementArray.length; i++) {    
+                    var timeLocal = new Date(parseInt(elementArray[i].getAttribute("data-timestamp")));
+                    var hour = timeLocal.getHours();
+                    var ap = "am";
+                    if (hour > 11) {
+                        ap = "pm";
+                    }
+                    else if (hour > 12) {
+                        hour = hour - 12;
+                    }
+                    
+                    var string = elementArray[i].getAttribute("data-template");
+                    string = string.replace("[Y]", timeLocal.getFullYear());
+                    string = string.replace("[m]", ('0' + (timeLocal.getMonth() + 1)).slice(-2));
+                    string = string.replace("[d]", ('0' + timeLocal.getDate()).slice(-2));
+                    string = string.replace("[H]", ('0' + timeLocal.getHours()).slice(-2));
+                    string = string.replace("[g]", ('0' + hour).slice(-2));
+                    string = string.replace("[i]", ('0' + timeLocal.getMinutes()).slice(-2));
+                    string = string.replace("[s]", ('0' + timeLocal.getSeconds()).slice(-2));
+                    string = string.replace("[a]", ap);
+                    elementArray[i].childNodes[0].nodeValue = string;
+                }
+            };
+            
+            if (window.addEventListener)
+                window.addEventListener("DOMContentLoaded", onload);
+            else if (window.attachEvent)
+                window.attachEvent("onload", onload);
+        })();
+        </script><link rel="icon" href="https://wtheme.webme.com/img/main/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="https://wtheme.webme.com/img/main/favicon.ico" />
+<link type="image/x-icon" href="https://wtheme.webme.com/img/main/favicon.ico" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="https://wtheme.webme.com/img/main/ios_icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<!-- Remove the noindex-tag by booking any premium package on https://www.bedava-sitem.com/Premium/PackageSelection/. Only premium websites can be indexed by Google and other search engines -->
+<meta name="robots" content="noindex" />
+<meta property="og:title" content="allahcc - ." />
+<meta property="og:image" content="https://theme.webme.com/designs/css-only/screen.jpg" />
+		<title>gartichack - .</title>
+				<style type="text/css">
+			<!--
+						font=Courier New]h1#title{display: none;}
+h2#title span {display: none;}
+div.header{display: none;}
+li.nav_element{list-style-type: none;}
+li.nav_element{display: none;}[/font]			//-->
+		</style>
+			</head>
+	<body id="hpb_cssonly">
+				<div id="container">
+			<div id="header_container">
+				<div id="pre_header"></div>
+				<div class="header"><h1 id="header"><span>gartichack</span></h1></div>
+				<div id="post_header"></div>
+			</div>
+			<div id="nav_container">
+			<h2 id="nav_heading"><span></span></h2>
+				<ul id="nav">
+<li class="nav_element checked_menu" id="nav_">
+<a href="/-.-.htm" class="menu">.</a></li>
+<li class="nav_element" id="nav_asd">
+<a href="/asd.htm" class="menu">asd</a></li>
+<li class="nav_element" id="nav_sad">
+<a href="/sad.htm" class="menu">sad</a></li>
+				</ul>
+			</div>
+			<div id="content_container">
+				<div id="pre_content"></div>
+				<div id="content">
+					<h2 id="title"><span>.</span></h2>
+					<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+LUXY GOTTEN VERDİ VERDİ VERDİİİ
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#search-input").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("body div table tbody tr").filter(function() {
+      $(this).toggle(
+        $(this)
+          .text()
+          .toLowerCase()
+          .indexOf(value) > -1
+      );
+    });
+  });
+});
+
+
+window.addEventListener("load",()=>{loadRooms()})
+
+const loadRooms = () => {
+  fetch("https://gartic.io/req/list?search=&language[]=8")
+    .then(x => x.json())
+    .then(x => {
+      x.forEach(x => {
+        fetch(`https://gartic.io/serverViewer?room=${x.code}`)
+          .then(z => z.text())
+          .then(z => {
+            const server = z.split("//")[1].split(".")[0];
+            const websocket = new WebSocket(`wss://${server}.gartic.io/socket.io/?EIO=3&transport=websocket`);
+            websocket.onopen = () => websocket.send(`42[12,{"v":20000,"sala":"${x.id}"}]`);
+            websocket.onmessage = (e) => {
+              try {
+                const data = JSON.parse(e.data.slice(2));
+                if (data[0] === 5) {
+                  data[5].forEach(room => {
+                    room.foto = room.foto === undefined ? `https://gartic.io/static/images/avatar/svg/${room.avatar}.svg` : room.foto;
+                    const tableBody = document.querySelector("body div table tbody");
+                    tableBody.innerHTML += `<tr>
+                      <td>
+                        <img src="${room.foto}" alt="Avatar" class="avatar" />
+                      </td>
+                      <td>${room.nick}</td>
+                      <td>#${x.code}</td>
+                      <td>
+                        <button onclick='joinroom("${x.code}")'>Odaya Kat&#305;l</button>
+                        <button onclick='viewerroom("${x.code}")'>Oday&#305; izle</button>
+                        <button onclick='konus("${x.id}","${server}","selam","${room.nick}")'>Selam ver</button>
+                        <button onclick='konus("${x.id}","${server}","kufur","${room.nick}")'>Küfür et</button>
+                      </td>
+                    </tr>`;
+                  });
+                  websocket.close();
+                }
+              } catch (error) {}
+            };
+          });
+      });
+    });
+}
+
+const randomapi = (min,max,count) =>{
+  fetch(`https://www.randomnumberapi.com/api/v1.0/random?min=${min}&max=${max}&count=${count}`)
+    .then(x => x.json())
+    .then(x => {
+      return x
+    })
+};
+
+const joinroom = (code) => window.open(`https://gartic.io/${code}`, '_blank');
+const viewerroom = (code) => window.open(`https://gartic.io/${code}/viewer`, '_blank');
+
+const konus = (code, server, yap, isim) => {
+  const websocket = new WebSocket(`wss://${server}.gartic.io/socket.io/?EIO=3&transport=websocket`);
+  websocket.onopen = () => {
+    websocket.send(`42[3,{"v":20000,"nick":"allah","avatar":1,"sala":"${code}"}]`);
+    websocket.onmessage = (e) => {
+      try {
+          const data = JSON.parse(e.data.slice(2));
+          if (data[0] === 5) {
+           websocket.send(`42[46,${data[2]}]`);
+		             websocket.send('1');
+
+           const messageText = yap === 'selam' ? `Merhaba güzellik ${isim}` : `allahınısikimqwe ${isim}`;
+             websocket.send(`42[11,${data[2]},"${messageText}"]`);
+        }
+      } catch (error) {}
+    };
+  };
+};
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyuncu Arama</title>
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c2331;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a3548;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #3d485d;
+  margin-top: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-height: 200px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #fff;
+}
+
+th {
+  background-color: #2a3548;
+}
+
+tr:hover {
+  background-color: #4a5568;
+  border: none;
+  color: #fff;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+          <input type="text" id="search-input" placeholder="Oyuncu ad&#305; veya Oda Kodu numaras&#305;" />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Fotoğraf</th>
+            <th>Nick</th>
+            <th>Oda</th>
+            <th>İşlemler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png"
+                alt="Avatar"
+                class="avatar"
+              />
+            </td>
+            <td>allah</td>
+            <td>https://discord.gg/bizbizeyiz</td>
+        <td>
+          <button onclick='joinroom("384Sew")'>Odaya Katıl</button>
+          <button onclick='viewerroom("384Sew")'>Odayı izle</button>
+          <button onclick='konus("4Sew","server05","selam","allah")'>Selam ver</button>
+          <button onclick='konus("4Sew","server05","kufur","allah")'>Küfür et</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </body>
+</html>
+
+<script>				</div>
+				<div id="counter"><span></span></div>
+				<div id="post_content"></div>
+								<div id="sidebar_container">
+					<h2 id="sidebar_heading"><span></span></h2>
+					<div id="sidebar_content"></div>
+				</div>
+			</div>
+		</div>
+						
+<style>
+    body {
+        padding-top: 124px;
+    }
+    #forFixedElement {
+        top: 124px;
+    }
+    @media (min-width: 365px) {
+        body {
+            padding-top: 103px;
+        }
+        #forFixedElement {
+            top: 103px;
+        }
+    }
+    @media (min-width: 513px) {
+        body {
+            padding-top: 82px;
+        }
+        #forFixedElement {
+            top: 82px;
+        }
+    }
+    @media (min-width: 936px) {
+        body {
+            padding-top: 61px;
+        }
+        #forFixedElement {
+            top: 61px;
+        }
+    }
+
+    /* General button style */
+    #selfpromotionOverlay .btn {
+        border: none;
+        font-size: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
+        padding: 6px 15px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin: 0px;
+    }
+
+    /* Button 1 */
+    #selfpromotionOverlay .btn-1, #selfpromotionOverlay .btn-1:visited {
+        background: rgb(0, 85, 204);
+        color: #fff;
+    }
+
+    #selfpromotionOverlay .btn-1:hover {
+        background: #2980b9;
+    }
+
+    #selfpromotionOverlay .btn-1:active {
+        background: #2980b9;
+        top: 2px;
+    }
+
+    #selfpromotionOverlay {
+        font: 400 12px/1.8 "Open Sans", Verdana, sans-serif;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 1s ease;
+        position: fixed;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 1.5em;
+        flex-wrap: nowrap;
+        z-index: 5000;
+        padding: 14px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: rgb(35,35,35);
+        background-color: rgb(246,246,246);
+        border-bottom: 1px solid #5a5a5a;
+    }
+
+    #selfpromotionOverlay:hover {
+        background: white;
+        text-decoration: none;
+    }
+</style>		<div id="extraDiv1"><span></span></div>
+		<div id="extraDiv2"><span></span></div>
+		<div id="extraDiv3"><span></span></div>
+		<div id="extraDiv4"><span></span></div>
+		<div id="extraDiv5"><span></span></div>
+		<div id="extraDiv6"><span></span></div>
+	</body>
+</html>

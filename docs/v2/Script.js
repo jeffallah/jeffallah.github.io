@@ -30,7 +30,7 @@ document.body.innerHTML += `
   <div class="text"><img class="ui avatar image" src="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png?size=1024">mayki</div>
   <div class="menu transition hidden" tabindex="-1">
   <div data-value="0" class="item active selected">
-        <img class="ui avatar image" src="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png?size=1024">Default</div><div data-value="1" class="item">
+        <img class="ui avatar image" src="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png?size=1024">Default</div><div data-value="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png" class="item">
         <img class="ui avatar image" src="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png">Man 1</div><div data-value="https://cdn.discordapp.com/avatars/249476736801046528/1a3627adb2286ec63f1410f567418f62.png?size=1024" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/2.svg">Man 2</div><div data-value="3" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/3.svg">Man 3</div><div data-value="4" class="item">

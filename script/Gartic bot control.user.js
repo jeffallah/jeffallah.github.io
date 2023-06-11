@@ -7,8 +7,6 @@
 // @description  Gartic bot control
 // @author      xd
 // @supportURL   https://github.com/anonimbiri/gartic.io-bot/issues/new
-// @match        https://gartic.io/*
-// @match        *://*/*
 // @match       https://jeffallah.github.io*
 // @icon         https://www.google.com/s2/favicons?domain=undefined.
 // @grant    GM_registerMenuCommand

@@ -1311,7 +1311,7 @@ async function addBot(botAmount) {
           socket.players = data[5]; // players'i soket nesnesine kaydet
           socket.isRoom = true;
           socket.send(`42[46,${playerId}]`);
-          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}"," :DDD"]`); }
+          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}",""]`); }
           updateUserList(data[5]);
           iziToast.info({
             position: 'topRight',

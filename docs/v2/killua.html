@@ -300,7 +300,7 @@ document.querySelector("div.search-container button").onclick = () => {
         playerSearchGO(document.getElementById("language").value);
     };
 
-    document.querySelector(".searchspeed-log").innerHTML = `arama h&#305;z&#305;: x${listUniqueproxys().length || 1}`;
+    document.querySelector(".searchspeed-log").innerHTML = `arama hazır;: x${listUniqueproxys().length || 1}`;
 
 
 const playersearchfilter = () => {const value = $(".search-input").val().toLowerCase();const isGarticPlayerChecked = $("#gartic-player").is(":checked");const isLoginedChecked = $("#logged-in-player").is(":checked");$(".player-card").each(function() {const imgSrc = $(this).find("img").attr("src");const isGarticPlayer = imgSrc.includes("gartic.io/");const isLoginedPlayer = !isGarticPlayer;if((isGarticPlayer&&isGarticPlayerChecked)||(isLoginedPlayer&&isLoginedChecked)){$(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)}else{$(this).hide()}})}
@@ -322,7 +322,7 @@ const createPopup = (oyuncu,foto,oda,oyuncusayisi) => {
     platform = getSocialMedia(foto)
     const popup = document.createElement("div");
     popup.className = "popup-overlay";
-    popup.innerHTML = `<div class="popup-popup"><a href="#" class="popup-close" onclick="document.querySelector('.popup-overlay').remove()">�</a><div class="popup-profile"><img class="popup-avatar" src="${foto}"><div class="popup-nick">${nick}</div></div><div class="popup-info"><div class="popup-detail"><span class="detail-label">ID:</span><span class="detail-value">${id}</span></div><div class="popup-detail"><span class="detail-label">Oda:</span><span class="detail-value">${tema} ${kod.substring(3)}</span></div><div class="popup-detail"><span class="detail-label">Oyuncular:</span><span class="detail-value">${oyuncusayisi}/${maxoyuncu}</span></div>${kupa==0?``:`<div class="popup-detail"><span class="detail-label">kupa:</span><span class="detail-value">${kupa}</span></div>`}<div class="popup-detail"><span class="detail-label">Puan:</span><span class="detail-value">${puan}/${maxpuan}</span></div><div class="popup-detail"><span class="detail-label">Platform:</span><span class="detail-value">${platform}</span></div><div class="popup-buttons"><button class="button" id="blue" onclick="window.open('https://gartic.io/${kod}','_blank')">Gir</button><button class="button" id="gold" onclick="window.open('https://gartic.io/${kod}/viewer','_blank')">&#304;zle</button>${platform=="Discord"?`<button class="button" id="gartic" onclick="window.open('https://lookup.guru/${foto.split("/")[4]}','_blank')">Discord Add Friend</button>`:``}<button class="button" id="pink">Bot Gönder</button></div></div></div>`;
+    popup.innerHTML = `<div class="popup-popup"><a href="#" class="popup-close" onclick="document.querySelector('.popup-overlay').remove()">X</a><div class="popup-profile"><img class="popup-avatar" src="${foto}"><div class="popup-nick">${nick}</div></div><div class="popup-info"><div class="popup-detail"><span class="detail-label">ID:</span><span class="detail-value">${id}</span></div><div class="popup-detail"><span class="detail-label">Oda:</span><span class="detail-value">${tema} ${kod.substring(3)}</span></div><div class="popup-detail"><span class="detail-label">Oyuncular:</span><span class="detail-value">${oyuncusayisi}/${maxoyuncu}</span></div>${kupa==0?``:`<div class="popup-detail"><span class="detail-label">kupa:</span><span class="detail-value">${kupa}</span></div>`}<div class="popup-detail"><span class="detail-label">Puan:</span><span class="detail-value">${puan}/${maxpuan}</span></div><div class="popup-detail"><span class="detail-label">Platform:</span><span class="detail-value">${platform}</span></div><div class="popup-buttons"><button class="button" id="blue" onclick="window.open('https://gartic.io/${kod}','_blank')">Gir</button><button class="button" id="gold" onclick="window.open('https://gartic.io/${kod}/viewer','_blank')">&#304;zle</button>${platform=="Discord"?`<button class="button" id="gartic" onclick="window.open('https://lookup.guru/${foto.split("/")[4]}','_blank')">Discord Add Friend</button>`:``}<button class="button" id="pink">Bot Gönder</button></div></div></div>`;
     //      <button class="button" id="red">-</button>
     //      <button class="button" id="emerald">-/button>
     document.body.appendChild(popup);
@@ -837,8 +837,7 @@ function botGonderme(){
           width:100%;
           height:100%;
           z-index:-2;
-          background-image:url("https://gartic.io/static/images/new/textura.png");
-          filter:sepia(50%) saturate(50) hue-rotate(450deg)
+          background-image:url("https://cdn.discordapp.com/attachments/1107734645568704552/1130263998797992076/killua-zoldyck-5120x2880-10722.png");
         }
   .loading-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh}
   .lds-ring{display:inline-block;position:relative;width:80px;height:80px}
